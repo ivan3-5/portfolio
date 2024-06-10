@@ -91,6 +91,26 @@ ul li a:hover {
     color: var(--primary-color-dark);
 }
 
+.section {
+    background-color: var(--extra-light);
+}
+
+.section_container {
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 @media (width < 750px) {
     nav .checkbox {
         display: block;
