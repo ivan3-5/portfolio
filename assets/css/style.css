@@ -86,17 +86,18 @@
         width: 80%;
         height: 100vh;
         margin-top: 0;
-        top: calc(10vh - calc(var(--bs-gutter-x) * 0.5));
-        left: 125%;
+        top: calc(10vh - calc(var(--bs-gutter-x) * 0.65));
+        left: -100%;
         gap: 25px;
-        padding-top: 50px;
+        padding-top: 10px;
+        padding-right: 10px;
         background: rgba(0, 0, 0, 0.55);
         flex-direction: column;
-        /* align-items: center; */
+        align-items: flex-end;
     }
 
     .navbar #check:checked ~ ul {
-        left: 300px;
+        left: -150px;
     }
 }
 /* ========Header======== */
@@ -105,8 +106,7 @@
 .body {
     background-color: rgba(0, 0, 0, 0.55);
     color: var(--text-light);
-    height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 /* ========Body======== */
 
@@ -117,7 +117,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow-x: hidden;
 }
 
 a {
