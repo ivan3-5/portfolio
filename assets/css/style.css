@@ -6,6 +6,7 @@
     --text-dark: #212327;
     --text-light: #b8c0cf;
     --text-grey: #9da5b4;
+    --content-rem-size: 10rem;
 }
 /* ========Root==== */
 
@@ -53,7 +54,7 @@
 .hamburger-menu {
     fill: rgba(255, 255, 255, 1);
     cursor: pointer;
-    transform: 0.3s;
+    transition: 0.3s;
 }
 
 .hamburger-menu:hover {
@@ -212,22 +213,21 @@
 }
 
 @media (width < 768px) {
-    .content {
-        padding: 0;
-        padding-left: 10rem;
-        padding-right: 10rem;
-        margin-bottom: 4rem;
-
-    }
-
     .section {
         text-align: center;
         min-height: 100vh;
         grid-template-columns: repeat(1, 1fr);
     }
+    
+    .content {
+        padding: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 2rem;
+    }
 
     .image {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         grid-area: 1/1/2/2;
     }
 
@@ -236,23 +236,23 @@
     }
 }
 
-@media (width < 992px) {
-    .content {
-        padding: 0;
-        padding-left: 10rem;
-        padding-right: 10rem;
-        margin-bottom: 4rem;
-
-    }
-
+@media (width = 992px) {
     .section {
         text-align: center;
         min-height: 100vh;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .image {
+    .content {
+        padding: 0;
+        padding-left: var(--content-rem-size);
+        padding-right: var(--content-rem-size);
         margin-bottom: 4rem;
+
+    }
+
+    .image {
+        margin-bottom: 2rem;
         grid-area: 1/1/2/2;
     }
 
