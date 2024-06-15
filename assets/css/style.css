@@ -19,6 +19,7 @@
     position: sticky;
     width: 100%;
     height: 13vh;
+    z-index: 99;
 }
 
 .logo {
@@ -243,7 +244,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .content {
+    .section .content {
         padding: 0;
         padding-left: var(--content-rem-size);
         padding-right: var(--content-rem-size);
@@ -251,16 +252,59 @@
 
     }
 
-    .image {
+    .section .image {
         margin-bottom: 2rem;
         grid-area: 1/1/2/2;
     }
 
-    .buttons {
+    .section .btn-flex .buttons {
         margin: auto;
     }
 }
 /* ========Body======== */
+
+/* --------About-------- */
+.section-content {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: var(--text-light);
+    height: 100%;
+    min-height: 87vh;
+    /* overflow-x: hidden; */
+    overflow-y: auto;
+    display: flex;
+}
+
+.section-content .image-abt {
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-content .image-abt img {
+    width: 100%;
+    min-width: 100px;
+    max-width: 450px;
+    position: relative;
+    border: 2px solid var(--primary-color);
+    border-radius: 100%;
+    justify-content: center;
+    z-index:0
+}
+
+@media (width < 768px) {
+    .section-content {
+        text-align: center;
+        min-height: 100vh;
+    }
+}
+
+@media (width = 992px) {
+    .section-content {
+        text-align: center;
+        min-height: 100vh;
+    }
+}
+/* ========About======== */
 
 /* --------Tags-------- */
 body {
