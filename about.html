@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivan Adcan's Portfolio</title>
+    <title>Ivan Adcan - About Me</title>
 </head>
 <body>
     <header class="header">
@@ -20,15 +20,80 @@
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./portfolio.html">Portfolio</a></li>
                     <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./about.html">About</a></li>
+                    <li><a class="active" href="./about.html">About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="container-fluid section-content">
-        <div class="image-abt">
-            <img src="./assets/images/profile.jpg" alt="Ivan Adcan">
+
+    <main class="about-section container">
+        <!-- Section Title -->
+        <div class="section-header">
+            <h2>About <span>Me</span></h2>
+            <p>Get to know my story, skills, and background.</p>
         </div>
-    </div>
+
+        <!-- Bio & Skills Grid -->
+        <div class="about-header-grid">
+            <div class="image">
+                <img src="./assets/images/profile.jpg" alt="Ivan Adcan">
+            </div>
+            <div class="about-bio">
+                <h3>Who I Am</h3>
+                <p class="description">
+                    I'm a passionate web developer with a strong focus on building highly interactive, modern, and performant web applications. I love taking complex problems and turning them into simple, beautiful, and intuitive designs.
+                </p>
+                
+                <div class="skills-container">
+                    <h4 class="mb-3">My Skills</h4>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 22h20L12 2zm0 3.99L19.53 20H4.47L12 5.99z"/></svg>
+                            <span>Frontend Dev</span>
+                        </div>
+                        <div class="skill-card">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zm-1 5H5v-2h14v2zm1-15H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zm-1 5H5V6h14v2z"/></svg>
+                            <span>Backend Dev</span>
+                        </div>
+                        <div class="skill-card">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <div class="skill-card">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-3.3l-.85-.6C8.24 11.36 7 9.87 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 .87-1.24 2.36-2.15 3.1z"/></svg>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="skill-card">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM4 12c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8-8 3.58-8 8zm9-5h-2v6h6v-2h-4V7z"/></svg>
+                            <span>Optimization</span>
+                        </div>
+                        <div class="skill-card">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            <span>Clean Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="timeline-container">
+            <h3 class="text-center mb-5">My Journey</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-title">IT Student - Davao del Norte State College</div>
+                    <div class="timeline-desc">Pursuing a Bachelor of Science in Information Technology (BSIT), focusing on web development, programming, and building modern web applications.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021 - 2023</div>
+                    <div class="timeline-title">GAS Student - Macgum Integrated School</div>
+                    <div class="timeline-desc">Completed Senior High School under the General Academic Strand (GAS), gaining foundational academic knowledge and beginning self-study in software and web design.</div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
